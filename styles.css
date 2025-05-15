@@ -1,0 +1,114 @@
+/* Базові налаштування сторінки */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 20px auto;
+  padding: 0 20px;
+  max-width: 800px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Заголовок першого рівня */
+#header {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #3498db;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Звичайний параграф */
+p {
+  font-size: 1.1em;
+  margin: 15px 0;
+  color: #666;
+}
+
+/* Контейнери з класом item */
+.item {
+  display: inline-block;
+  background-color: #fff;
+  padding: 12px 20px;
+  margin: 10px 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Основний список задач */
+#todo-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#todo-list li {
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  position: relative;
+}
+
+/* Вкладені списки */
+#todo-list ul {
+  list-style: circle;
+  padding-left: 30px;
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #7f8c8d;
+}
+
+/* Посилання в списку */
+#todo-list a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+#todo-list a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+/* Підзадачі */
+#todo-list ul li {
+  background-color: transparent;
+  padding: 4px 0;
+  margin-bottom: 4px;
+}
+
+/* Стилі для виділеного елемента */
+.item.highlight {
+  background-color: #e3f2fd;
+  border-color: #2196f3;
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+  animation: pulse 1.5s infinite;
+}
+
+/* Анімація для ефекту пульсації */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
